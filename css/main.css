@@ -1,0 +1,19 @@
+body {
+    height: 100%;         /* full height */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, rgba(127, 255, 14, 0.836), rgb(187, 110, 110)); /* full screen background */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-family: cursive;
+}
+p {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+}
