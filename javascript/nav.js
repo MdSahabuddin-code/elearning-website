@@ -1,28 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const navbarContainer = document.getElementById("navbar-container");
+  console.log("✅ DOM fully loaded");
 
+  // Load navbar
   fetch("nav.html")
-    .then(response => {
-      if (!response.ok) throw new Error("Failed to load nav");
-      return response.text();
-    })
-    .then(data => {
-      navbarContainer.innerHTML = data;
-    })
-    .catch(error => {
-      console.error("Navbar load error:", error);
-      navbarContainer.innerHTML = `
-        <nav id="navbar">
-          <div id="logo">
-            <img src="logo/logo.png" alt="E-learning Logo" style="height:50px;">
-          </div>
-          <div id="nav-links">
-            <a href="index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
-        </nav>
-      `;
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("navbar-container").innerHTML = html;
+      console.log("✅ Navbar injected");
+
+      // Select elements AFTER injection
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      console.log("📌 Found hamburger:", hamburger);
+      console.log("📌 Found navLinks:", navLinks);
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("show");
+          console.log("👆 Hamburger clicked, nav-links classList:", navLinks.classList);
+          console.log("📐 Computed transform:", getComputedStyle(navLinks).transform);
+        });
+      } else {
+        console.error("❌ Could not find hamburger or nav-links");
+      }
     });
 });
