@@ -17,12 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (hamburger && navLinks) {
         hamburger.addEventListener("click", () => {
-          navLinks.classList.toggle("show");
+          navLinks.classList.toggle("show");        // slide menu
+          hamburger.classList.toggle("active");     // hamburger → cross
           console.log("👆 Hamburger clicked, nav-links classList:", navLinks.classList);
-          console.log("📐 Computed transform:", getComputedStyle(navLinks).transform);
         });
       } else {
         console.error("❌ Could not find hamburger or nav-links");
       }
-    });
+    })
+    .catch(err => console.error("❌ Navbar load failed:", err));
 });

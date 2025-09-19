@@ -11,7 +11,7 @@ nav {
   border-radius: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 0;
   right: 0;
@@ -29,8 +29,8 @@ nav img {
   display: flex;
   gap: 10px;
   margin-left: auto;
-}
 
+}
 nav a {
   color: rgb(15, 159, 150);
   text-decoration: none;
@@ -46,7 +46,7 @@ nav a:hover {
 
 /* ================= HAMBURGER ================= */
 #navbar .hamburger {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 25px;
@@ -91,7 +91,7 @@ nav a:hover {
 
   #nav-links a {
     padding: 10px,12px;
-    text-align: right;
+    text-align: center;
     border-radius: 8px;
     transition: background 0.2s;
   }
@@ -103,4 +103,16 @@ nav a:hover {
   #navbar {
     padding: 10px 20px;
   }
+  /* Transform hamburger to cross */
+#navbar .hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#navbar .hamburger.active span:nth-child(2) {
+  opacity: 0; /* hide middle line */
+}
+
+#navbar .hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 }

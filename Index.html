@@ -1,35 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-learning</title>
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-learning</title>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div id="navbar-container"></div>
-    <section class ="hero">
-    <h1>Welcome to the E-learnings Platform</h1>
-    <p>This is a simple e-learning platform where you can find various courses and resources to enhance your knowledge.</p>
-    <a href="courses.html">Browse Courses</a>
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- Main Content -->
+  <main>
+  <section class="hero">
+      <div class="hero-content">
+            <div class="hero-image">
+      <img src="image/hero.png" alt="Learning illustration"><p>E-Learning</p>
+      </div>
+      <div class="hero-text">
+        <p>Learn with Fun</p>
+        <h1>Welcome to Our E-learning Platform</h1>
+        <p>Developed by MD SAHABUDDIN</p>
+      </div>
     </section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ratione facere laborum inventore officia commodi, natus deleniti corrupti tenetur quod hic debitis nobis. Deleniti officia esse doloremque voluptatibus quidem illum est debitis repellat corporis quia atque, ut alias expedita, ea perferendis modi perspiciatis iure iusto.</p>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-column">
-                <p>Contact us: Phone: (123) 456-7890 </p>
-                <p>Email:abc@gmail.com</p>
+    <!-- Camp Highlights -->
+<section class="highlights">
+            <h2>Camp Highlights</h2>
+            <div class="highlight-grid">
+                <div class="highlight-item" style="background-color: #072265;">
+                    <div class="highlight-image" style="background-image: url('image/Math.jpg');"></div>
+                    <div class="highlight-text">Math</div>
+                </div>
+                <div class="highlight-item" style="background-color: #70A4AE;">
+                    <div class="highlight-image" style="background-image: url('image/science.jpg');"></div>
+                    <div class="highlight-text">Science</div>
+                </div>
+                <div class="highlight-item" style="background-color: #6a6a6ad8;">
+                    <div class="highlight-image" style="background-image: url('image/eng.png');"></div>
+                    <div class="highlight-text">Engineering</div>
+                </div>
+                <div class="highlight-item" style="background-color: #01999F">
+                    <div class="highlight-image" style="background-image: url('image/tech.webp'); height: 40vh;"></div>
+                    <div class="highlight-text">Technology</div>
+                </div>
             </div>
-            <div class="footer-column">
-                <p> Adress: 123 Learning St, Knowledge City, EduCountry</p>
-            </div>
-            <div class="footer-column">
-                <p>&copy; 2025| E-learning Platform. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="javascript/nav.js"></script>
+        </section>
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>What can we help you with?</h2>
+      <form>
+        <input type="text" placeholder="First name" required>
+        <input type="text" placeholder="Last name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p>500 Terry Francois Street, San Francisco, CA 94158<br>Info@mywebsite.com | Tel: 123-456-7890</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <p>Contact us: Phone: (123) 456-7890 </p>
+        <p>Email: abc@gmail.com</p>
+      </div>
+      <div class="footer-column">
+        <p>Address: 123 Learning St, Knowledge City, EduCountry</p>
+      </div>
+      <div class="footer-column">
+        <p>&copy; 2025 | E-learning Platform. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="javascript/nav.js"></script>
+  <script src="javascript/main.js"></script>
 </body>
 </html>
