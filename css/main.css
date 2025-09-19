@@ -77,29 +77,55 @@ body {
   background-color: rgb(15, 159, 150);
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  font-weight: bolder;
+  border: none;
+  font-family: "Delius", Arial;
+}
+.btn:hover {
+  background-color: #4e2d79;
 }
 
-/* ================= COURSES ================= */
-.courses {
-  padding: 50px 10%;
+/* ================= Directory ================= */
+.directory {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 40px 20px;
   text-align: center;
+  align-items: center;
 }
-
-.course-list {
-  display: flex;
+.directory h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #424242
+}
+.card{
+  display:flex;
   gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap;;
+}
+.card-Container{
+  background-color: #dcdcdf4d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 280px;
+  text-align: center;
+  padding : 20px;
+}
+.card-Container img{
+  width: 100%;
+  border-radius: 10px;;
 }
 
-.course-card {
-  background-color: #fefefe;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 200px;
+.card-Container h3{
+  color: #ff6f28
+}
+
+.card-Container:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;    
 }
 
 /* ================= HIGHLIGHTS ================= */
