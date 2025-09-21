@@ -57,7 +57,6 @@ body {
     display: none; /* Hides the image on mobile */
   }
   .hero-text{
-    font-size: 50px; /* Adjust font size for better readability */
     color: #c31d7b;
     background-color: rgba(255, 255, 255, 0.365); /* Semi-transparent background for text */
     border-radius: 100px;
@@ -115,6 +114,7 @@ body {
 }
 .card-Container img{
   width: 100%;
+  height: 200px;
   border-radius: 10px;;
 }
 
@@ -168,6 +168,56 @@ body {
     color: white;
 }
 
+/* ================= UPSKILL ================= */
+
+.upskill {
+  height: ;
+  background-color: #2e377f;
+  color: #fff;
+  text-align: center;
+}
+.upskill-content {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+.upskill-content h2 {
+  font-size: 60px;
+}
+.upskill-content p {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+   .upskill-content {
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;   /* allows image absolute positioning */
+    overflow: hidden;     /* prevents overflow of image */
+  }
+
+  .upskill-content img {
+    position: absolute;   /* make image background */
+    top: 50%;             /* center vertically */
+    left: 50%;            /* center horizontally */
+    transform: translate(-50%, -50%); /* perfect centering */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;         /* dim image so text is readable */
+    z-index: 0;           /* behind text */
+  }
+
+  .upskill-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .upskill-content p {
+    text-align: left;
+  }
+}
 
 /* ================= CONTACT ================= */
 .contact {

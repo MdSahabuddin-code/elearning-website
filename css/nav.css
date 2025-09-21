@@ -44,9 +44,10 @@ nav a:hover {
   text-decoration: underline;
 }
 
+
 /* ================= HAMBURGER ================= */
 #navbar .hamburger {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 25px;
